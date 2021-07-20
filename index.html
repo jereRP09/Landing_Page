@@ -4,66 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+
+    <!--Cabeçalho-->
+    <header class="cabeçalho">
         <h1>Welcome to Acme Web Solutions</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci eum error earum soluta voluptatum nisi laboriosam eos saepe asperiores dolorum.</p>
         <div class="buton">Read More</div>
     </header>
-    <article class="descricao">
+
+    <!--Seçao A-->
+    <section class="secao_a">
         <h2>Web & Application Development</h2>
-        <p><span id="align_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde officiis magnam laborum ipsa distinctio odio, vero dolores</span><span id="align_right"> dicta aliquam aperiam repellendus. Perferendis officiis deserunt velit voluptas nobis sequi animi totam, accusantium, ex eius quia, natus quo?</span></p>
-    </article>
-    <section id="especialidades" >
-        <ul>
-            <li>
-                <div>
-                    <figure>
-                        <img src="imagens/img1.jpeg" alt="WebDevImg">
-                    </figure>
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <figure>
-                        <img src="imagens/img2.jpeg" alt="MobileAppImg">
-                    </figure>
-                    <h3>Mobile Applications</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>                  
-                </div>                
-            </li>
-            <li>
-                <div>
-                    <figure>
-                        <img src="imagens/img3.jpg" alt="MarketingImg">
-                    </figure>
-                    <h3>Tech Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
-                </div>
-            </li>
-        </ul>
-    </section> 
-    <article class="descricao">
+        <p id="texto_2_colunas"><span id="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde officiis magnam laborum ipsa distinctio odio, vero dolores</span><span id="right"> dicta aliquam aperiam repellendus. Perferendis officiis deserunt velit voluptas nobis sequi animi totam, accusantium, ex eius quia, natus quo?</span></p>
+    </section>
+
+    <!--Seçao B-->
+    <section class="secao_b" >
+        <div>
+            <img src="imagens/img1.jpeg">
+            <h2>Web Development</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+        </div>
+
+        <div>
+            <img src="imagens/img2.jpeg">
+            <h2>Mobile Applications</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+        </div>
+
+        <div>
+            <img src="imagens/img3.jpeg">
+            <h2>Tech Marketing</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+        </div>
+    </section>
+
+    <!--Seçao C--> 
+    <section class="secao_c">
         <h2>We handle all of your digital needs</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ipsa voluptatem qui quos nihil possimus maxime corrupti a repellendus, ut nesciunt nam nobis tempore ratione animi, repellat reprehenderit deleniti. Neque.</p>
-    </article>
-    <section id="ultima_secao">
-        <div id="contato">
+    </section>
+
+    <!--Seçao D-->
+    <section class="secao_d">
+        <div class="col_esquerda">
             <h2>Contact Us</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et voluptas obcaecati unde fuga.</p>
-            <span id="email">contact@acmewebsolutions.test</span>
+            <span>contact@acmewebsolutions.test</span>
         </div>
-        <div id="sobre">
+        <div class="col_direita">
             <h2>About Our Company</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem neque laborum, ratione fugiat numquam itaque, eius aperiam, voluptate libero fuga cum ullam ipsum quo incidunt delectus. Consequuntur quibusdam similique vero.</p>
         </div>
     </section>
+
+    <!--Rodapé-->
     <footer>
-        Acme Web Solutions
-        Project By Traversy Media
+        <span class="rodape">Acme Web Solutions</span>
+        <span class="rodape">Project By Traversy Media</span>
     </footer>
 </body>
 </html>
