@@ -15,9 +15,8 @@ h2{
 /*Cabeçalho*/
 .cabeçalho{
     position: relative;
-    max-width: 1135px;
-    height: 450px;
     width: 100%;
+    height: 450px;
     background-image:url(imagens/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,22 +34,19 @@ h2{
     top: 130px;
     font-weight: bold;
     color: white;
-    margin: 10px 140px 30px;
+    margin: 10px 5% 30px;
 }
 
 /*Botão*/
-.buton{
+.buton a{
     position: relative;
-    top: 130px;
-    color: white;
-    border: 1px solid rgb(255, 255, 255);
-    margin: 0 43%;
-    padding: 20px 5px;
-    background-color:rgb(119, 115, 115);
-}
-:hover.buton{
-    background-color: white;
-    color: rgb(119, 115, 115);
+    top: 140px;
+    white-space: nowrap;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(29, 29, 29);
+    padding:20px 40px;
 }
 
 /*Seção A*/
@@ -68,8 +64,7 @@ h2{
 .secao_a #texto_2_colunas{
     display: flex;
     justify-content: space-around;
-    width: 860px;
-    margin: 50px auto;
+    margin: 50px 10px;
     height: 120px;
 }
 
@@ -119,16 +114,14 @@ h2{
 }
 
 .secao_c p{
-    width: 800px;
     margin: 0 auto;
 }
 
 /*Seção D*/ 
 .secao_d{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     color: white;
+    max-width: 1135px;
 }
 
 .secao_d h2{
@@ -144,9 +137,10 @@ h2{
 }
 
 .col_esquerda{
+    display: block;
+    flex: 1 1 567.5px;
     background-color:#2690d4; 
     height: 336px;
-    width: 567.5px;
 }
 .col_esquerda span{
     display: block;
@@ -155,9 +149,10 @@ h2{
 }
 
 .col_direita{
+    display: block;
+    flex: 1 1 567.5px;
     background-color:#333;  
     height: 336px;
-    width: 567.5px;
 }
 
 /*Rodapé*/
@@ -171,6 +166,28 @@ footer{
 
 .rodape{
     margin-top: 40px;
+}
+
+/*Media Quéries para responsividade*/
+@media(max-width:1090px){
+
+    .secao_b div{
+        margin: 10px auto;
+    }
+
+    .secao_d{
+        flex-wrap: wrap;
+    }
+
+}
+@media(max-width:700px){
+    .secao_a{
+        height: 260px;
+    }
+
+    .secao_a #texto_2_colunas{
+        flex-wrap: wrap;
+    }
 }
 
 
